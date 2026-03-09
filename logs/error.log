@@ -1,0 +1,176 @@
+[2025-09-17 18:38:20] SQL Error: Table 'elearningplatform.announcements' doesn't exist -- Query: 
+  SELECT title, created_at
+  FROM announcements
+  ORDER BY created_at DESC
+  LIMIT 3
+
+[2025-09-17 18:38:20] SQL Error: Unknown column 'name' in 'field list' -- Query: 
+  SELECT name, points
+  FROM users
+  ORDER BY points DESC
+  LIMIT 5
+
+[2025-09-17 18:38:20] SQL Error: Unknown column 'c.short_desc' in 'field list' -- Query: 
+    SELECT c.id, c.title, COALESCE(c.short_desc,'') AS short_desc,
+           COALESCE(c.thumbnail,'') AS thumbnail,
+           COUNT(e.user_id) AS enrolls
+    FROM courses c
+    LEFT JOIN enrollments e ON e.course_id = c.id
+    GROUP BY c.id
+    ORDER BY enrolls DESC, c.id DESC
+    LIMIT 8
+  
+[2025-09-17 18:41:42] SQL Error: Table 'elearningplatform.announcements' doesn't exist -- Query: 
+  SELECT title, created_at
+  FROM announcements
+  ORDER BY created_at DESC
+  LIMIT 3
+
+[2025-09-17 18:41:42] SQL Error: Unknown column 'name' in 'field list' -- Query: 
+  SELECT name, points
+  FROM users
+  ORDER BY points DESC
+  LIMIT 5
+
+[2025-09-17 18:41:42] SQL Error: Unknown column 'c.short_desc' in 'field list' -- Query: 
+    SELECT c.id, c.title, COALESCE(c.short_desc,'') AS short_desc,
+           COALESCE(c.thumbnail,'') AS thumbnail,
+           COUNT(e.user_id) AS enrolls
+    FROM courses c
+    LEFT JOIN enrollments e ON e.course_id = c.id
+    GROUP BY c.id
+    ORDER BY enrolls DESC, c.id DESC
+    LIMIT 8
+  
+[2025-09-17 18:44:38] SQL Error: Table 'elearningplatform.announcements' doesn't exist -- Query: 
+  SELECT title, created_at
+  FROM announcements
+  ORDER BY created_at DESC
+  LIMIT 3
+
+[2025-09-17 18:44:38] SQL Error: Unknown column 'name' in 'field list' -- Query: 
+  SELECT name, points
+  FROM users
+  ORDER BY points DESC
+  LIMIT 5
+
+[2025-09-17 18:44:38] SQL Error: Unknown column 'c.short_desc' in 'field list' -- Query: 
+    SELECT c.id, c.title, COALESCE(c.short_desc,'') AS short_desc,
+           COALESCE(c.thumbnail,'') AS thumbnail,
+           COUNT(e.user_id) AS enrolls
+    FROM courses c
+    LEFT JOIN enrollments e ON e.course_id = c.id
+    GROUP BY c.id
+    ORDER BY enrolls DESC, c.id DESC
+    LIMIT 8
+  
+[2025-09-17 18:54:10] SQL Error: Table 'elearningplatform.announcements' doesn't exist -- Query: 
+  SELECT title, created_at
+  FROM announcements
+  ORDER BY created_at DESC
+  LIMIT 3
+
+[2025-09-17 18:54:10] SQL Error: Unknown column 'name' in 'field list' -- Query: 
+  SELECT name, points
+  FROM users
+  ORDER BY points DESC
+  LIMIT 5
+
+[2025-09-17 18:54:10] SQL Error: Unknown column 'c.short_desc' in 'field list' -- Query: 
+    SELECT c.id, c.title, COALESCE(c.short_desc,'') AS short_desc,
+           COALESCE(c.thumbnail,'') AS thumbnail,
+           COUNT(e.user_id) AS enrolls
+    FROM courses c
+    LEFT JOIN enrollments e ON e.course_id = c.id
+    GROUP BY c.id
+    ORDER BY enrolls DESC, c.id DESC
+    LIMIT 8
+  
+[2025-09-17 18:54:40] SQL Error: Table 'elearningplatform.announcements' doesn't exist -- Query: 
+  SELECT title, created_at
+  FROM announcements
+  ORDER BY created_at DESC
+  LIMIT 3
+
+[2025-09-17 18:54:40] SQL Error: Unknown column 'name' in 'field list' -- Query: 
+  SELECT name, points
+  FROM users
+  ORDER BY points DESC
+  LIMIT 5
+
+[2025-09-17 18:54:40] SQL Error: Unknown column 'c.short_desc' in 'field list' -- Query: 
+    SELECT c.id, c.title, COALESCE(c.short_desc,'') AS short_desc,
+           COALESCE(c.thumbnail,'') AS thumbnail,
+           COUNT(e.user_id) AS enrolls
+    FROM courses c
+    LEFT JOIN enrollments e ON e.course_id = c.id
+    GROUP BY c.id
+    ORDER BY enrolls DESC, c.id DESC
+    LIMIT 8
+  
+[2025-09-17 18:54:41] SQL Error: Table 'elearningplatform.announcements' doesn't exist -- Query: 
+  SELECT title, created_at
+  FROM announcements
+  ORDER BY created_at DESC
+  LIMIT 3
+
+[2025-09-17 18:54:41] SQL Error: Unknown column 'name' in 'field list' -- Query: 
+  SELECT name, points
+  FROM users
+  ORDER BY points DESC
+  LIMIT 5
+
+[2025-09-17 18:54:41] SQL Error: Unknown column 'c.short_desc' in 'field list' -- Query: 
+    SELECT c.id, c.title, COALESCE(c.short_desc,'') AS short_desc,
+           COALESCE(c.thumbnail,'') AS thumbnail,
+           COUNT(e.user_id) AS enrolls
+    FROM courses c
+    LEFT JOIN enrollments e ON e.course_id = c.id
+    GROUP BY c.id
+    ORDER BY enrolls DESC, c.id DESC
+    LIMIT 8
+  
+[2025-09-17 19:00:48] SQL Error: Table 'elearningplatform.announcements' doesn't exist -- Query: 
+  SELECT title, created_at
+  FROM announcements
+  ORDER BY created_at DESC
+  LIMIT 3
+
+[2025-09-17 19:00:48] SQL Error: Unknown column 'name' in 'field list' -- Query: 
+  SELECT name, points
+  FROM users
+  ORDER BY points DESC
+  LIMIT 5
+
+[2025-09-17 19:00:48] SQL Error: Unknown column 'c.short_desc' in 'field list' -- Query: 
+    SELECT c.id, c.title, COALESCE(c.short_desc,'') AS short_desc,
+           COALESCE(c.thumbnail,'') AS thumbnail,
+           COUNT(e.user_id) AS enrolls
+    FROM courses c
+    LEFT JOIN enrollments e ON e.course_id = c.id
+    GROUP BY c.id
+    ORDER BY enrolls DESC, c.id DESC
+    LIMIT 9
+  
+[2025-09-17 19:06:13] SQL Error: Table 'elearningplatform.announcements' doesn't exist -- Query: 
+  SELECT title, created_at
+  FROM announcements
+  ORDER BY created_at DESC
+  LIMIT 3
+
+[2025-09-17 19:06:13] SQL Error: Unknown column 'name' in 'field list' -- Query: 
+  SELECT name, points
+  FROM users
+  ORDER BY points DESC
+  LIMIT 5
+
+[2025-09-17 19:06:13] SQL Error: Unknown column 'c.short_desc' in 'field list' -- Query: 
+    SELECT c.id, c.title, COALESCE(c.short_desc,'') AS short_desc,
+           COALESCE(c.thumbnail,'') AS thumbnail,
+           COUNT(e.user_id) AS enrolls
+    FROM courses c
+    LEFT JOIN enrollments e ON e.course_id = c.id
+    GROUP BY c.id
+    ORDER BY enrolls DESC, c.id DESC
+    LIMIT 9
+  

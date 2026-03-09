@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fa;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h3 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Forms */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form .btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007BFF;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form .btn:hover {
+  background: #0056b3;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background: #007BFF;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+nav ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #007BFF;
+  font-weight: bold;
+}
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.dark-mode .container {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.dark-mode table th {
+  background: #444;
+}
+
+.dark-mode a {
+  color: #66b2ff;
+}
+.progress-container {
+    background: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    font-size: 12px;
+    transition: width 0.5s;
+}
+
+/* Green if passed */
+.progress-bar.pass {
+    background: #28a745;
+}
+
+/* Red if failed */
+.progress-bar.fail {
+    background: #dc3545;
+}

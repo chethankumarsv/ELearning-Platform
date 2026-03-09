@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Student Check-in</title></head>
+<body>
+<h3>Mark Attendance</h3>
+
+<form id="attForm">
+  <input type="hidden" name="session_id" id="session_id" value="">
+  <input type="hidden" name="lat" id="lat">
+  <input type="hidden" name="lng" id="lng">
+  <button type="button" id="btn">Mark Attendance (Use location)</button>
+</form>
+
+<div id="status"></div>
+
+<script>
+// You can set session_id from URL ?session_id=123
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const s = params.get('session_id');
+  if(s) document.getElementById('session_id').value = s;
+})();
+
+document.getElementById('btn').addEventListener('click', function(){
+  const statusEl = document.getElementById('status');
+  statusEl.textContent = 'Getting location...';
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(function(pos){
+      document.getElementById('lat').value = pos.coords.latitude;
+      document.getElementById('lng').value = pos.coords.longitude;
+      send();
+    }, function(err){
+      statusEl.textContent = 'Location denied. Sending without location...';
+      send();
+    }, {timeout:10000});
+  } else {
+    statusEl.textContent = 'Geolocation not available. Sending...';
+    send();
+  }
+
+  function send(){
+    const fd = new FormData(document.getElementById('attForm'));
+    fetch('mark_attendance.php', { method:'POST', body: fd, credentials: 'same-origin' })
+      .then(r => r.json())
+      .then(j => {
+        if(j.ok) statusEl.textContent = j.message || 'Marked';
+        else statusEl.textContent = j.message || j.error || JSON.stringify(j);
+      }).catch(e => statusEl.textContent = 'Network error: ' + e.message);
+  }
+});
+</script>
+</body>
+</html>
